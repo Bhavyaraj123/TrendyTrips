@@ -15,7 +15,7 @@ dotenv.config();
 const _dirname = path.resolve();
 const PORT = process.env.PORT || 8000;
 const corsOp = {
-    origin: 'http://localhost:5173',
+    origin: 'https://trendytrips-1.onrender.com/',
     credentials: true,
 }
 dbConnect();
