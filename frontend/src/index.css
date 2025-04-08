@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+
+    
+.border{
+    border: 2px solid rgb(255, 215, 0);
+
+}
+.border2{
+    border: 2px solid rgb(205, 127, 50);
+
+}
+.border3{
+    border: 2px solid rgb(218, 165, 32);
+
+}
+.news {
+    position: relative;
+    background-image: url('../src//assets/images/tvl.jpg');
+    background-size: cover; 
+    background-position: center; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 50vh; 
+    padding: 20px; 
+    color: blue; 
+}
+@media (max-width: 1024px) {
+    .news {
+        min-height: 70vh; /* Reduce height for tablets */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .news {
+        min-height: 60vh; /* Reduce height for mobile */
+        padding: 10px;
+        background-size: contain; /* Prevents zooming in too much */
+    }
+}
+
+@media (max-width: 480px) {
+    .news {
+        min-height: 50vh;
+        padding: 5px;
+        background-size: cover; /* Adjusts to fit smaller screens */
+    }
+}
+
+.page span{
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid orange;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+}
+.activePage{
+background: orange;
+color: white !important;
+}

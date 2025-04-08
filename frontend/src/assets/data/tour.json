@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Dwarka",
+    "description": "Enjoy the best beach experience",
+    "address": "Gujarat India",
+    "price": 3999,
+    "image": "dwarka.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 15
+  },
+  {
+    "name": "Polo Forest",
+    "description": "Explore the stunning mountains",
+    "address": "Gujarat India",
+    "price": 2000,
+    "image": "polo.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 20
+  },
+  {
+    "name": "Ahmedabad",
+    "description": "Discover the best city spots",
+    "address": "Gujarat India",
+    "price": 1000,
+    "image": "ahmedabad.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 8
+  },
+  {
+    "name": "Taj Mahal",
+    "description": "Visit one of the wonders of the world",
+    "address": "India",
+    "price": 1500,
+    "image": "tajmahal.jpg",
+    "rating": 4.5,
+    "reviews": [
+      {
+        "UserName": "Bhavyaraj",
+        "rating": 5
+      },
+      {
+        "UserName": "Rinkal",
+        "rating": 5
+      }
+    ],
+    "featured": true,
+    "distance": 250
+  },
+  {
+    "name": "Goa",
+    "description": "Relax and party on the best beaches in Goa",
+    "address": "India",
+    "price": 5000,
+    "image": "goa.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 300
+  },
+  {
+    "name": "Ladakh",
+    "description": "Experience high-altitude trekking and scenic landscapes",
+    "address": "India",
+    "price": 8000,
+    "image": "ladakh.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 600
+  },
+  {
+    "name": "Kerala",
+    "description": "Experience the peaceful backwaters on a houseboat",
+    "address": "India",
+    "price": 5000,
+    "image": "kerala.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 400
+  },
+  {
+    "name": "Varanasi Tour",
+    "description": "Witness the Ganga Aarti and explore temples",
+    "address": "India",
+    "price": 2500,
+    "image": "varanasi.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 120
+  },
+  {
+    "name": "Rann of Kutch",
+    "description": "Witness the white desert and cultural heritage",
+    "address": "Gujarat India",
+    "price": 3000,
+    "image": "kutch.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 50
+  },
+  {
+    "name": "Jaipur",
+    "description": "Explore forts and palaces of the Pink City",
+    "address": "Rajasthan India",
+    "price": 3500,
+    "image": "jaipur.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 180
+  },
+  {
+    "name": "Andaman",
+    "description": "Enjoy pristine beaches and water sports",
+    "address": "India",
+    "price": 7000,
+    "image": "andaman.jpg",
+    "rating": 4.5,
+    "reviews": [],
+    "featured": true,
+    "distance": 1000
+  }
+]
