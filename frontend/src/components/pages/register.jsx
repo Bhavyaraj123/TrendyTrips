@@ -113,14 +113,7 @@ const Register = () => {
         </div>
 
         {/* Google Sign-up Button */}
-        <button className="mt-4 w-full flex justify-center items-center gap-3 border border-gray-300 py-3 rounded-lg font-semibold text-gray-700 hover:bg-gray-100 transition">
-          <img
-            src="/assets/google-icon.svg" // Replace with your local path for the Google SVG
-            alt="Google"
-            className="h-5 w-5"
-          />
-          Sign up with Google
-        </button>
+      
 
         <p className="text-center text-gray-600 mt-4">
           Already have an account?{" "}

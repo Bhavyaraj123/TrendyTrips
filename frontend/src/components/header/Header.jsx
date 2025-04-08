@@ -82,7 +82,6 @@ const Header = () => {
           <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
           <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
           <li><Link to="/tours" onClick={() => setIsOpen(false)}>Tours</Link></li>
-          <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
         </ul>
 
         {/* Mobile Auth Section */}
