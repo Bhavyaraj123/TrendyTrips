@@ -9,10 +9,14 @@ import authCont from "./routes/auth.js"
 import reviewRoute from "./routes/review.js"
 import bookingRoute from "./routes/bookings.js"
 import path from 'path'
+import { fileURLToPath } from "url";
 // npm run start dev for starting the backend ,
 const app = express();
 dotenv.config(); 
-const _dirname = path.resolve();
+
+// Fix for __dirname in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const PORT = process.env.PORT || 8000;
 const allowedOrigins = [
    
@@ -44,9 +48,10 @@ app.use("/api/v1/booking",bookingRoute)
 
 
  
-app.use(express.static(path.join(_dirname, '../frontend/dist')));
-app.get('*',(_,res)=>{
-    res.sendFile(path.resolve(_dirname,"../frontend/dist/index.html"))
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
+app.get("*", (_, res) => {
+  res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"));
 });
 // create tour
 
