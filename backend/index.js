@@ -15,9 +15,7 @@ dotenv.config();
 const _dirname = path.resolve();
 const PORT = process.env.PORT || 8000;
 const allowedOrigins = [
-    'http://localhost:5173',
-    'https://trendytrips-1.onrender.com',
-  ];
+    'http://localhost:5173' ];
   
   const corsOp = {
     origin: function (origin, callback) {
