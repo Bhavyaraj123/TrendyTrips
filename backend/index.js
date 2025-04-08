@@ -14,16 +14,28 @@ const app = express();
 dotenv.config(); 
 const _dirname = path.resolve();
 const PORT = process.env.PORT || 8000;
-const corsOp = {
-    origin: 'https://trendytrips-1.onrender.com',
+const allowedOrigins = [
+    'http://localhost:5173',
+    'https://trendytrips-1.onrender.com',
+  ];
+  
+  const corsOp = {
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
-}
+  };
+  app.use(cors(corsOp));
+  
 dbConnect();
 app.use("/uploads", express.static("uploads"));
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors(corsOp));
 app.use("/api/v1/auth",authCont)  
 app.use("/api/v1/tours",tourRoute)
 app.use("/api/v1/user",userRoute)
