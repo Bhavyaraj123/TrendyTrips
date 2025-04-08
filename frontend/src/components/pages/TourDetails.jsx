@@ -16,7 +16,7 @@ const TourDetails = () => {
   const image = tour?.image || "/default-image.jpg"; // Default image
   const address = tour?.address || "No address available";
   const reviews = tour?.reviews || [];
-  const imageUrl = `http://localhost:8000/uploads/${image}`;
+  const imageUrl = `https://trendytrips.onrender.com/uploads/${image}`;
 
   // State for reviews
   const [localReviews, setLocalReviews] = useState([]);

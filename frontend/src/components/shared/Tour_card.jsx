@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Tour_card = ({ tour }) => {
   const { image, name, description, price, reviews, _id } = tour;
-  const imageUrl = `http://localhost:8000/uploads/${image}`;
+  const imageUrl = `https://trendytrips.onrender.com/uploads/${image}`;
 
   const totalRating =
     reviews.length > 0 ? reviews.reduce((acc, item) => acc + item.rating, 0) : 0;

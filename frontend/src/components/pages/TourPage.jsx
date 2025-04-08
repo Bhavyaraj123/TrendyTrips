@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SearchBar from '../shared/SearchBar'
-import Tour from '../../assets/data/Tour'
-import FeatureToursList from '../feature-tours/FeatureToursList'
+
 import Tour_card from '../shared/Tour_card'
 import News from '../shared/News'
 import useFetch from '../../hooks/useFetch'
