@@ -15,7 +15,7 @@ dotenv.config();
 const _dirname = path.resolve();
 const PORT = process.env.PORT || 8000;
 const corsOp = {
-    origin: 'https://trendytrips-1.onrender.com/',
+    origin: 'https://trendytrips-1.onrender.com',
     credentials: true,
 }
 dbConnect();
@@ -32,7 +32,7 @@ app.use("/api/v1/booking",bookingRoute)
 
 
  
-app.use(express.static(path.join(_dirname,'/frontend/dist')))
+app.use(express.static(path.join(_dirname, '/frontend/dist')));
 app.get('*',(_,res)=>{
     res.sendFile(path.resolve(_dirname,"frontend","dist","index.html"))
 });
