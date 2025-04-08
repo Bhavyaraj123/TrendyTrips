@@ -1,0 +1,17 @@
+{
+    "installCommand":"npm install",
+    "version":2,
+    "builds":[
+        {
+            "src":"index.js",
+            "use":"@vercel/static"
+        },
+        {
+            "src":"src/**/*",
+            "user":"@vercel/static"
+        }
+    ],
+    "routes":[
+        {"src":"/(.*)","dest":"/"}
+    ]
+}
